@@ -65,3 +65,65 @@ var fullName = function (firstName, secondName){
     var myLastName = 'Fredsgaard'
 
     fullName (myFirstName, myLastName)
+
+
+//If statements, these can be true or false and something happens depending on wether or not 1 or 0 is returned (true or false)
+if (true){
+    alert('female')
+}; //if this "thing" is true the program will alert female
+
+if ('male' == 'male')//the double use of equal signs is necessary when comparing something, if there is only one equal sign it means that string gets assigned a value (string, number etc.)
+
+//We can ask things like the examples below and either true or false will be returned
+
+if (2 == 2){
+    alert('true')
+};
+
+if (12 > 1){
+    alert ('true')
+}; //Program alerts 'true'
+
+if (1 > 12){
+    alert('true')
+}; //Program returns nothing since it has not been specified what it should do in case the if statement isn't true
+
+//This can also be done with variables: 
+var numOne = 56
+var numTwo = 23
+
+if (numOne > numTwo){
+    alert('true')
+}; //This will return true, since numTwo is indeed smaller than numOne
+
+//In order to get a return when a if statement isn't true, else is added:
+if (12 > 34){
+    alert('true')
+} else {
+    alert('false')
+} //In this instance false will be returned since 12 isn't bigger than 34 and the statement therefor is false
+
+//It is also possible to get the program to respond with true if one of two (or more) instances is true 
+
+var name1 = 'Bob'
+var name2 = 'Ole'
+
+if (name1 == 'Ole'){
+    alert('true')
+} else if (name2 == 'Ole'){
+    alert('true!')
+} else{
+    alert('false')
+}; 
+
+
+//This is the OR symbol: ||, the shortcut is: option + i 
+//The variables are remembered and doesn't need to be defined again
+
+if (name1 == 'Ole' || name2 == 'Ole'){
+    alert('True')
+} else{
+    alert('False')
+};
+
+
