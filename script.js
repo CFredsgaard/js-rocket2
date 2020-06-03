@@ -1,25 +1,32 @@
-//I want to create my own object: the car is my object and everything inside these {} are the obejct's proporties and their values 
 var car = {
-    make: 'Ford',
-    type: 'Fiesta',
-    color: 'Red',
+    //Proporties and proportie values:
+    make: 'Tesla',
+    model: 'Model 3',
+    color: 'Black',
     isTurnedOn: false,
     numberOfWheels: 4,
     seats: [
-        'seat 1', 
-        'seat 2', 
-        'seat 3', 
-        'seat 4'
+        'seat 1',
+        'seat 2',
+        'seat 3',
+        'seat 4',
+        'seat 5'
     ],
 
-    //creat a method: 
-    turnOn: function (){
+    //Methods/functions:
+    turnOn: function(){
         this.isTurnedOn = true;
-
     },
+
     turnOff: function (){
         this.isTurnedOn = false;
-    }
-};
+    },
+    
+    fly: function(){
+        alert('fly');
+    }, 
 
-console.log('Hello friends!');
+
+
+    
+};
