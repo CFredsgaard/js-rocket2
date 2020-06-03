@@ -26,7 +26,12 @@ var car = {
         alert('fly');
     }, 
 
-
-
-    
+    switchCar: function (isOn){
+        console.log('turn car '+isOn)
+        if (isOn == true) {
+            this.isTurnedOn = true;
+        } else {
+            this.isTurnedOn = false;
+        }
+    },   
 };
