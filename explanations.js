@@ -51,3 +51,17 @@ var area = function (width, height) {
     return width*height
 }
 
+var fullName = function (firstName, secondName){
+    return firstName + ' ' + secondName;
+}//This ' ' is added between firstName and secondName so that the browser returns the two names with a space between them
+
+    //When calling names in the browser it can be done in two ways: 
+
+    //This way it returns the two strings inside the function as they ar written, it is important to remember these '' , or else the browser will think it is a variable and not a string and a variable needs to be defined first
+    fullName ('Cecilie', 'Fredsgaard')
+
+    //This way it is done by calling variables, so these must first be defined. Since we are calling variables and not strings the '' are omitted
+    var myFirstName = 'Cecilie'
+    var myLastName = 'Fredsgaard'
+
+    fullName (myFirstName, myLastName)
