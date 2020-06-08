@@ -12,3 +12,14 @@ body{
     text-align: center;
     font-weight: bold;
 }
+
+.cool{
+    width: 100px;
+    height: 100px;
+    background-color: forestgreen;
+    transition: background-color 5s;
+}
+
+.cool.red{
+    background-color: red;
+}
