@@ -1,3 +1,7 @@
+var sayMyName = function (name){
+    alert('My name is: '+name)
+}
+
 var car = {
     //Proporties and proportie values:
     make: 'Tesla',
@@ -33,5 +37,6 @@ var car = {
         } else {
             this.isTurnedOn = false;
         }
-    },   
+    },
+
 };
