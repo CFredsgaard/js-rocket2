@@ -1,0 +1,50 @@
+body{
+    background-color: deepskyblue;
+    font-family: fantasy;
+}
+
+.button{
+    background-color: dodgerblue;
+    margin-right: 90em;
+    margin-top: 10px;
+    padding: 12px;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.cool{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    transition: background-color 1s;
+
+}
+
+.cool.red{
+    background-color: tomato;
+}
+
+.cool2{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    transition: background-color 1s;
+
+}
+
+.cool2.red{
+    background-color: tomato;
+}
+
+#id_cool2{
+    margin-right: 90em;
+    margin-top: 10px;
+    padding: 12px;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+

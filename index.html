@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Rocket</title>
+    <script type="text/javascript" src="js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Testing facility for the JavaScript rocket</h1>
+    </header>
+   
+   <!-- Button to turn car ON -->
+    <div class="button">
+        <a href="#" onclick="car.switchCar(true);">Click here to turn the car on</a>
+    </div>
+
+    <!-- Button to turn car OFF -->
+    <div class="button">
+        <a href="#" onclick="car.switchCar(false);">Click here to turn the car off</a>
+    </div>
+
+    <!-- Button to alert fly -->
+    <div class="button">
+        <a href="#" onclick="car.fly()">FLY BITCH</a>
+    </div>
+
+    <!-- Button to alert name -->
+    <div class="button">
+        <a href="#" onclick="sayMyName('Cecilie');">Click here for a name</a>
+    </div>
+
+    <!-- Button to tell name in consol -->
+    <div class="button">
+        <a href="#" onclick="consoleName();">Name in console</a>
+    </div>
+    
+    <!-- Cool Button, makes div underneath change color -->
+        <!-- NOTE the href, it links to an id (#id_cool), if it links to # alone it will jump to the start of the page -->
+    <div class="button">
+        <a href="#id_cool" onclick="doCoolStuff();">Box underneath changes color</a>
+    </div>
+
+    <div class="cool" id="id_cool">
+        <p>Hello out there</p>
+    </div>
+
+    <!-- Cool button, here the button is the thing that changes color -->
+        <!-- NOTE the href, it links to 'javascript:void('')' this makes sure that the page dosent move when the button (a) is clicked -->
+    <div class="button cool" id="id_cool2">
+        <a href="javascript:void('')" onclick="buttonChangeColor();">button changes color</a>
+    </div>
+
+
+    <!-- Resume SkillShare class -->
+    <h2>Where am I at in my SkillShare class?</h2>
+    <p>
+        Video 11: 
+        <br> 
+        Paused at: N/A
+    </p>
+</body>
+</html>
+
