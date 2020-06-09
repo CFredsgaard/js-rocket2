@@ -1,11 +1,30 @@
+//This is an invisble comment
+
+/* This is also an invisible comment, 
+but on multiple...
+...lines
+*/
+
 //Makes the button that is pressed change color
 var buttonChangeColor =function(){
-    document.getElementById('id_cool2').className = 'cool red';
+    var currentClassName = document.getElementById('colorButton').className
+    //changing class name
+    if (currentClassName == 'coolButton'){
+        document.getElementById('colorButton').className = 'coolButton purple'; 
+    } else {
+        document.getElementById('colorButton').className = 'coolButton';
+    }  
 }
 
 //For the button that makes a div change color
 var doCoolStuff = function(){
-    document.getElementById('id_cool').className = 'cool red';
+    var currentClassName = document.getElementById('id_cool').className
+    //changing class name
+    if (currentClassName == 'cool'){
+        document.getElementById('id_cool').className = 'cool red';
+    } else {
+        document.getElementById('id_cool').className = 'cool';
+    }  
 }
 
 //Box pops up with name

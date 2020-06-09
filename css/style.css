@@ -1,10 +1,15 @@
 body{
-    background-color: deepskyblue;
+    background-color: lightcyan;
     font-family: fantasy;
 }
 
+a{
+    text-decoration: none;
+}
+
+/* This is the layout of the buttons */
 .button{
-    background-color: dodgerblue;
+    background-color: lightslategray;
     margin-right: 90em;
     margin-top: 10px;
     padding: 12px;
@@ -12,39 +17,49 @@ body{
     text-align: center;
     font-weight: bold;
 }
-
+/* This class is for the button that changes the color of the div underneath it */
 .cool{
     width: 200px;
     height: 200px;
-    background-color: blue;
+    background-color: rgb(27, 70, 243);
     transition: background-color 1s;
+    visibility: border hidden;
 
 }
 
+/* This class is for the button that changes the color of the div underneath it */
 .cool.red{
-    background-color: tomato;
+    background-color: rgb(252, 29, 70);
+    visibility: visible;
 }
 
-.cool2{
-    width: 200px;
-    height: 200px;
-    background-color: blue;
-    transition: background-color 1s;
-
+#id_cool{
+    margin-top: 7px;
+    font-size: 2em;
+    padding: 5px 0px 0px 20px;
+    color: white;
 }
 
-.cool2.red{
-    background-color: tomato;
-}
-
-#id_cool2{
+/* This class is for the button that changes its own color */
+.coolButton{
+    /* The first part is the same attributes as the button class, but the background color has been left out. 
+    Figure out if there is a way to make sure these change if anything is changed about the button class*/
     margin-right: 90em;
     margin-top: 10px;
     padding: 12px;
     border-radius: 20px;
     text-align: center;
     font-weight: bold;
+    /* The rest is all specific for the coolButton class */
+    background-color: rgb(31, 216, 46);
+    transition: background-color 1s;
 }
+
+/* This class is for the button that changes its own color */
+.coolButton.purple{
+    background-color: purple;
+}
+
 
 
 
